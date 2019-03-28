@@ -1,0 +1,38 @@
+.container{
+    max-width: none;
+}
+.container:after{
+    content: none;
+}
+.container:before{
+    content: none;
+}
+.navItemContainer{
+    flex-direction: row;
+} 
+
+/* #basic-nav-dropdown{
+    float: left;
+    box-shadow: unset;
+    min-width: 200px
+}
+.navbar-nav.open.dropdown-menu{
+    position: absolute;
+    float: right;
+    min-width: 200px;
+
+}
+#dropdown-menu{
+    position: absolute;
+    float: right;
+    color: #555;
+    top: 55px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    left: 20px;
+    min-width: 150px;
+}
+.dropdown-toggle::after{
+    content: none;
+} */
