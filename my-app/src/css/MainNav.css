@@ -1,5 +1,8 @@
 .container{
     max-width: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 .container:after{
     content: none;
@@ -7,19 +10,27 @@
 .container:before{
     content: none;
 }
+
+.navbar-header{
+    font-size: larger;
+}
 .navItemContainer{
-    flex-direction: row;
+    flex-direction: row-reverse;
+    list-style-type: none; 
+    position: fixed;
 } 
 
-/* #basic-nav-dropdown{
+#basic-nav-dropdown{
     float: left;
     box-shadow: unset;
-    min-width: 200px
+    min-width: 200px;
+    
 }
 .navbar-nav.open.dropdown-menu{
     position: absolute;
     float: right;
     min-width: 200px;
+    
 
 }
 #dropdown-menu{
@@ -35,4 +46,4 @@
 }
 .dropdown-toggle::after{
     content: none;
-} */
+}
