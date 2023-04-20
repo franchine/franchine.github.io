@@ -5,12 +5,12 @@ import DynamicTypist from "./js/DynamicTypist";
 function App() {
   return (
     <>
-      <div className="backgroundImg">
+      {/* <div className="backgroundImg">
         <header className="App-header">
           franchine ninh <br></br>
           <DynamicTypist />
         </header>
-      </div>
+      </div> */}
     </>
   );
 }
