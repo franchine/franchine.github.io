@@ -58,3 +58,11 @@
 a:hover {
   color: transparent;
 }
+
+.nameTitle {
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: calc(20px + 2vmin);
+  font-weight: bolder;
+  justify-content: center;
+}

@@ -1,24 +1,52 @@
 .galleryWrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  max-width: 620px;
-  margin: 0 auto;
+  line-height: 0;
+  -webkit-column-count: 5; /* split it into 5 columns */
+  -webkit-column-gap: 10px; /* give it a 5px gap between columns */
+  -moz-column-count: 5;
+  -moz-column-gap: 10px;
+  column-count: 5;
+  column-gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .galleryWrap .single {
-  width: 20px;
+  width: 100%;
   cursor: pointer;
 }
 
 .galleryWrap .single img {
-  max-width: 100%;
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 10px; /* to match column gap */
 }
 
 .galleryWrap .single img:hover {
-  transform: scale(1.02);
+  transform: scale(1.011);
+}
+
+@media (max-width: 1200px) {
+  .galleryWrap {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .galleryWrap {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .galleryWrap {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
 }
 
 .slideWrap {

@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import Gallery from "./js/Gallery";
 import "./css/App.css";
-import DynamicTypist from "./js/DynamicTypist";
 
 const galleryImgs = [
   {
-    img: require("./img/gallery/15650008-edited.png"),
+    img: require("./img/gallery/seattletraffic.JPG"),
   },
   {
     img: require("./img/gallery/chicago-edited.jpg"),
@@ -13,9 +11,7 @@ const galleryImgs = [
   {
     img: require("./img/gallery/fatherson-edited.jpg"),
   },
-  {
-    img: require("./img/gallery/tuilips026-edited.jpg"),
-  },
+
   {
     img: require("./img/gallery/fluffy-edited.jpg"),
   },
@@ -26,10 +22,13 @@ const galleryImgs = [
     img: require("./img/gallery/mtrainer-edited.jpg"),
   },
   {
-    img: require("./img/gallery/seattletraffic.JPG"),
+    img: require("./img/gallery/presidentpalace-edited.jpg"),
   },
   {
-    img: require("./img/gallery/presidentpalace-edited.jpg"),
+    img: require("./img/gallery/tuilips026-edited.jpg"),
+  },
+  {
+    img: require("./img/gallery/15650008-edited.png"),
   },
   {
     img: require("./img/gallery/thevessel-edited.jpg"),
@@ -46,7 +45,7 @@ function App() {
       {
         <div className="App">
           <br />
-          <div>
+          <div className="nameTitle">
             <strong>franchine ninh</strong>
           </div>
           <br />
@@ -56,7 +55,7 @@ function App() {
 
           <br />
           <br />
-          <div>hellohello</div>
+          <div></div>
         </div>
 
         /* <div className="backgroundImg">
