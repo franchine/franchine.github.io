@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleChevronLeft,
@@ -32,15 +31,35 @@ export const Gallery = ({ galleryImgs }) => {
       ? setSlideNumber(0)
       : setSlideNumber(slideNumber + 1);
   };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown, true);
+  });
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape") {
+      handleCloseModal();
+    }
+
+    if (e.key === "ArrowLeft") {
+      prevSlide();
+    }
+
+    if (e.key === "ArrowRight") {
+      nextSlide();
+    }
+  };
+
   return (
     <div>
       {openModal && (
-        <div className="slideWrap">
+        <div className="slideWrap" onKeyDown={handleKeyDown}>
           <FontAwesomeIcon
             icon={faCircleXmark}
             className="btnClose"
             onClick={handleCloseModal}
           />
+
           <FontAwesomeIcon
             icon={faCircleChevronLeft}
             className="btnPrev"
@@ -56,12 +75,8 @@ export const Gallery = ({ galleryImgs }) => {
           </div>
         </div>
       )}
-      {/* <br />
-      slide number: {slideNumber}
       <br />
-      total slides: {galleryImgs.length}
       <br />
-      <br /> */}
       <div className="galleryWrap">
         {galleryImgs &&
           galleryImgs.map((slide, index) => {

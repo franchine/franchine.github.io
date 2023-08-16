@@ -44,17 +44,6 @@
   }
 }
 
-.backgroundImg {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background: url(../img/background/landscape.JPG);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 a:hover {
   color: transparent;
 }
@@ -64,5 +53,10 @@ a:hover {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(20px + 2vmin);
   font-weight: bolder;
+  justify-content: center;
+}
+
+.bottonSocial {
+  align-items: center;
   justify-content: center;
 }

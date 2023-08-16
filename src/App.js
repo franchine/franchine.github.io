@@ -1,5 +1,7 @@
 import Gallery from "./js/Gallery";
 import "./css/App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const galleryImgs = [
   {
@@ -29,9 +31,6 @@ const galleryImgs = [
   {
     img: require("./img/gallery/tuilips026-edited.jpg"),
   },
-  // {
-  //   img: require("./img/gallery/15650008-edited.png"),
-  // },
   {
     img: require("./img/gallery/thevessel-edited.jpg"),
   },
@@ -77,25 +76,32 @@ function App() {
       {
         <div className="App">
           <br />
+          <br />
           <div className="nameTitle">
             <strong>franchine ninh</strong>
           </div>
           <br />
           <br />
-
           <Gallery galleryImgs={galleryImgs} />
-
           <br />
           <br />
           <div></div>
+          <div className="bottomHeader">
+            <FontAwesomeIcon
+              className="bottonSocial"
+              icon={faInstagram}
+              onClick={() => {
+                window.location.href =
+                  "https://www.instagram.com/franchineninh";
+              }}
+            />
+            <br />
+            <br />
+            <strong>© 2023 franchine ninh. all right reserved.</strong>
+          </div>
+          <br />
+          <br />
         </div>
-
-        /* <div className="backgroundImg">
-        <header className="App-header">
-          franchine ninh <br></br>
-          <DynamicTypist />
-        </header>
-      </div> */
       }
     </>
   );
