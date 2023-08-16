@@ -5,7 +5,7 @@
 - Portfolio photos
 - Photo slider
   - Arrow key functionality for previous and next photo
-- Botton header with Instagram link
+- Button header with Instagram link
 - CSS formatting
   - Dynamic column display of photos
   - Hover animation when a cursor is over a photo
