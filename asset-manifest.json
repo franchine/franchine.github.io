@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/photography-gallery/static/css/main.33532fe3.css",
-    "main.js": "/photography-gallery/static/js/main.ead12915.js",
+    "main.js": "/photography-gallery/static/js/main.7fdfb85f.js",
     "static/js/496.300f281a.chunk.js": "/photography-gallery/static/js/496.300f281a.chunk.js",
     "static/media/tuilips026-edited.jpg": "/photography-gallery/static/media/tuilips026-edited.0b919e14ebf28dfb863a.jpg",
     "static/media/Ninh002239-R1-027-12-edited.jpg": "/photography-gallery/static/media/Ninh002239-R1-027-12-edited.11732f9bceb0cd4ea93a.jpg",
@@ -25,11 +25,11 @@
     "static/media/seattletraffic.JPG": "/photography-gallery/static/media/seattletraffic.94542fdbdca2643dbae3.JPG",
     "index.html": "/photography-gallery/index.html",
     "main.33532fe3.css.map": "/photography-gallery/static/css/main.33532fe3.css.map",
-    "main.ead12915.js.map": "/photography-gallery/static/js/main.ead12915.js.map",
+    "main.7fdfb85f.js.map": "/photography-gallery/static/js/main.7fdfb85f.js.map",
     "496.300f281a.chunk.js.map": "/photography-gallery/static/js/496.300f281a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33532fe3.css",
-    "static/js/main.ead12915.js"
+    "static/js/main.7fdfb85f.js"
   ]
 }
