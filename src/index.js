@@ -7,7 +7,7 @@ import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <HashRouter base="/photgraphy-gallery/">
+  <HashRouter base="/photography-gallery/">
     <App />
   </HashRouter>
 );
