@@ -1,13 +1,13 @@
 .galleryWrap {
   line-height: 0;
-  -webkit-column-count: 3; /* split it into 5 columns */
-  -webkit-column-gap: 10px; /* give it a 5px gap between columns */
+  -webkit-column-count: 3; /* split it into 3 columns */
+  -webkit-column-gap: 25px; /* give it a (25/2)px gap between columns */
   -moz-column-count: 3;
-  -moz-column-gap: 10px;
+  -moz-column-gap: 25px;
   column-count: 3;
-  column-gap: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  column-gap: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .galleryWrap .single {
@@ -18,7 +18,7 @@
 .galleryWrap .single img {
   width: 100% !important;
   height: auto !important;
-  margin-bottom: 10px; /* to match column gap */
+  margin-bottom: 25px; /* to match column gap */
 }
 
 .galleryWrap .single img:hover {
