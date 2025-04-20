@@ -97,7 +97,7 @@ function App() {
             />
             <br />
             <br />
-            <strong>© 2023 franchine ninh. all rights reserved.</strong>
+            <strong>© 2025 franchine ninh. all rights reserved.</strong>
           </div>
           <br />
           <br />
