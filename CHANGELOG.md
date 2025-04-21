@@ -2,7 +2,7 @@
 
 ### Changed
 - removed unnecessary file
-- added things to .giignore
+- added things to .gitignore
 
 ## [0.1.1] - 2025-4-20
 
