@@ -1,3 +1,9 @@
+## [0.1.2] - 2025-4-20
+
+### Changed
+- removed unnecessary file
+- added things to .gitignore
+
 ## [0.1.1] - 2025-4-20
 
 ### Changed
