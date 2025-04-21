@@ -1,51 +1,10 @@
-## [0.1.4] - 2025-4-21
+## [0.1.1] - 2025-04-21
 
-### Changed
-- updated to black bg and white text
+- update to 1.0.4
 
-## [0.1.3] - 2025-4-20
+## [0.0.1] - 2025-04-20
 
-### Changed
-- updated deploy command in package.json
-
-## [0.1.2] - 2025-4-20
-
-### Changed
-- removed unnecessary file
-- added things to .gitignore
-
-## [0.1.1] - 2025-4-20
-
-### Changed
-- updated photo names
-- updated  deps
-- removed test, might be the thing thats stopping proper deploy?
-
-### Fixed
-
-- main branch with correct files
-- reorganized files
-
-
-## [0.1.0] - 2023-08-16
-
-### Added
-
-- Portfolio photos
-- Photo slider
-  - Arrow key functionality for previous and next photo
-- Button header with Instagram link
-- CSS formatting
-  - Dynamic column display of photos
-  - Hover animation when a cursor is over a photo
-
-### Changed
-
-- Reformatted website for photo portfolio
-
-## [0.0.1] - 2023-08-16
-
-Init changelog
+Init gh-pages
 
 ### Added
 
