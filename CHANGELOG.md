@@ -1,7 +1,7 @@
 ## [0.1.1] - 2025-4-20
 
 ### Changed
-- udpated photo names
+- updated photo names
 - updated  deps
 
 ### Fixed
