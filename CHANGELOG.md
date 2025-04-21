@@ -1,7 +1,7 @@
 ## [0.1.4] - 2025-4-21
 
 ### Changed
-- updated to blak bg and white text
+- updated to black bg and white text
 
 ## [0.1.3] - 2025-4-20
 
