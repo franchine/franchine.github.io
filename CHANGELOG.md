@@ -1,3 +1,8 @@
+## [0.1.3] - 2025-4-20
+
+### Changed
+- updated deploy command in package.json
+
 ## [0.1.2] - 2025-4-20
 
 ### Changed
