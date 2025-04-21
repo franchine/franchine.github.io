@@ -1,3 +1,8 @@
+## [0.1.3] - 2025-4-20
+
+### Changed
+- rename public folder to docs,  might help satisfy deploy
+
 ## [0.1.2] - 2025-4-20
 
 ### Changed
