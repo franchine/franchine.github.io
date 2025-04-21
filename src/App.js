@@ -84,7 +84,9 @@ function App() {
             />
             <br />
             <br />
-            <strong>© 2025 franchine ninh. all rights reserved.</strong>
+            <div className="bottomText">
+              <strong>© 2025 franchine ninh. all rights reserved.</strong>
+            </div>
           </div>
           <br />
           <br />
