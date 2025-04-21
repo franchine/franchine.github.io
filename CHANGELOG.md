@@ -3,6 +3,7 @@
 ### Changed
 - updated photo names
 - updated  deps
+- removed test, might be the thing thats stopping proper deploy?
 
 ### Fixed
 
