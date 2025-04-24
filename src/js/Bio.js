@@ -45,7 +45,7 @@ function Bio() {
             icon={faLinkedin}
             onClick={() => {
               window.location.href =
-                "[https://www.linkedin.com/in/franchineninh";
+                "https://www.linkedin.com/in/franchineninh";
             }}
           />
         </div>
