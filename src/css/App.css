@@ -1,9 +1,12 @@
 :root {
-  --primary-text-color: rgb(239, 238, 245);
+  --primary-text-color: plum; /* rgb(239, 238, 245); */
   --secondary-text-color: #555;
-  --text-icon-color: plum;
   --spacing-unit: 1rem; /* using rem for better scalability */
   --icon-size: 1.6rem;
+  --menu-panel-width: 250px;
+  --menu-panel-bg-color:rgba(14, 14, 14, 0.95); 
+  --menu-link-color: plum; 
+  --menu-link-hover-color:  rgb(239, 238, 245); 
 }
 
 body {
@@ -12,61 +15,89 @@ body {
   margin: 0; 
   padding: 0; 
   background-color: #121212; /* a dark background for better contrast with text color */
+  overflow-x: hidden;
 }
 
-a {
-  color: var(--text-icon-color);
-  text-decoration: none;
-  font-size: calc(1em + 0.5vw); /* adjust scaling with viewport width */
-  font-weight: bold;
-  transition: color 0.3s ease-in-out; /* add transition to all states for consistency */
-}
-
-a:hover,
-a:focus { 
-  color: transparent; /* make the text transparent on hover/focus */
-}
-
-.nameTitle {
-  color: var(--text-icon-color);
+.app-container {
   display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: calc(1.5em + 1vw); /* adjust scaling with viewport width */
-  font-weight: bolder;
-  justify-content: center;
+  /* flex-direction: row-reverse; */
+}
+
+.site-content {
+  flex-grow: 1;
+  padding: var(--spacing-unit);
+  /* transition: transform 0.3s ease-in-out; */
+  margin-left: auto;
+}
+
+/* .site-content.menu-open {
+  transform: translateX(calc(0px - var(--menu-panel-width))); 
+} */
+
+.menu-toggle {
+  color: var(--primary-text-color);;
+  position: fixed;
+  top: var(--spacing-unit);
+  right: var(--spacing-unit); /* Move toggle to the right */
+  background: none;
+  border: none;
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100;
+  padding: var(--spacing-unit); 
+  /* add some padding for better touch target */
+}
+
+.menu-panel {
+  position: fixed;
+  top: 0;
+  right: calc(0px - var(--menu-panel-width)); /* initially off-screen on the right */
+  width: var(--menu-panel-width);
+  height: 100%;
+  background-color: var(--menu-panel-bg-color);
+  color: var(--primary-text-color);
+  padding: var(--spacing-unit);
+  box-sizing: border-box;
+  transition: right 0.3s ease-in-out; /* change transition property */
+  z-index: 90;
+  overflow-y: auto;
+}
+
+.menu-panel.open {
+  right: 0; /* slide in */
+}
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
   margin-top: 2rem;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  padding: var(--spacing-unit);
-  background-color: rgba(0, 0, 0, 0.1); /* background to the navbar */
+.menu-nav li:last-child {
+  border-bottom: none;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.menu-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
 }
 
-li {
-  margin-left: var(--spacing-unit);
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--menu-link-hover-color);
 }
 
-.nav-link { 
-  display: block; /* make the entire link clickable */
-  padding: 0.5rem; 
-  border-radius: 5px;
-}
 
-.nav-link:hover,
-.nav-link:focus {
-  background-color: rgba(255, 255, 255, 0.1); /* subtle background on hover/focus */
-}
-
-.cat-icon {
-  font-size: var(--icon-size);
+.menu-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #555;
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
 }

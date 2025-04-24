@@ -3,16 +3,15 @@
   display: flex;
   flex-direction: column; /* stack the info and bottomHeader vertically */
   align-items: center;   
-  color: rgb(239, 238, 245);
-  padding : 0 calc(2 * var(--spacing-unit));
+  padding : calc(6 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
 }
 
 .info {
   display: grid;
-  grid-template-columns: auto 1fr; /* two columns: auto for image, 1fr for text */
-  align-items: center;         /* vertically align image and text container */
-  width: 100%;                /* ensure it takes full width of parent */
-  max-width: 800px;           /* optional: Limit the maximum width */
+  grid-template-columns: auto 1fr;  /* two columns: auto for image, 1fr for text */
+  align-items: center;              /* vertically align image and text container */
+  width: 100%;                      /* ensure it takes full width of parent */
+  max-width: 800px;                 /* optional: Limit the maximum width */
   margin-bottom: calc(3 * var(--spacing-unit));   
   margin-left: auto;  
   margin-right: auto; 
@@ -25,7 +24,7 @@
 }
 
 .text {
-  color: var(--text-icon-color);
+  color: var(--primary-text-color);
   display: flex;
   flex-direction: column; /* stack h1 and p vertically */
   justify-content: center; /* vertically center h1 and p within the text container */
@@ -46,7 +45,7 @@
 }
 
 .bottomSocial {
-  color: var(--text-icon-color);
+  color: var(--primary-text-color);
   display: flex;
   justify-content: center;
   margin-bottom: var(--spacing-unit);
@@ -58,7 +57,7 @@
 }
 
 .socialIcon:hover {
-  color: transparent;
+  color: rgb(239, 238, 245); 
   transition: color 0.3s ease-in-out; 
 }
 
