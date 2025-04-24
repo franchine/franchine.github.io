@@ -103,9 +103,6 @@ export const Gallery = ({ galleryImgs }) => {
             tabIndex={0} // make individual images focusable
             aria-label={`view ${index + 1} in full size`}
           >
-            {/* <div className="image-overlay">
-              <h3 className="image-title">{slide.title}</h3>
-            </div> */}
             <img src={slide.img} alt={`small preview of ${index + 1}`} />
           </div>
         ))}

@@ -4,7 +4,7 @@
 
 - linter
 - bio page, includes a profile picture
-- nav icon to bio page
+- nav menu panel to site
 
 ### Changed
 
