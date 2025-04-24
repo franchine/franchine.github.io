@@ -1,12 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
-
 import Gallery from "../js/Gallery";
 import "../css/Home.css";
 
@@ -99,9 +91,6 @@ const galleryImgs = [
 function Home() {
   return (
     <div className="home">
-      {/* <Link to="/" className="nameTitle">
-        franchine ninh
-      </Link> */}
       <h1 className="nameTitle">franchine ninh</h1>
       <Gallery galleryImgs={galleryImgs} />
       <br />
