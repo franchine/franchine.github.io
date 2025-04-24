@@ -12,13 +12,13 @@
   align-items: center;              /* vertically align image and text container */
   width: 100%;                      /* ensure it takes full width of parent */
   max-width: 800px;                 /* optional: Limit the maximum width */
-  margin-bottom: calc(3 * var(--spacing-unit));   
+  margin-bottom: calc(5 * var(--spacing-unit));   
   margin-left: auto;  
   margin-right: auto; 
 }
 
 .profile-image {
-  width: 200px;
+  width: 250px; /* fixed width for the image */
   height: auto;
   margin-right: calc(2 * var(--spacing-unit)); /* space between image and text */
 }
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column; /* stack h1 and p vertically */
   justify-content: center; /* vertically center h1 and p within the text container */
-  font-size: calc(7px + 2vmin);
+  font-size: calc(4px + 2vmin);
 }
 
 .text h1 {

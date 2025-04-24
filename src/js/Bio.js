@@ -16,11 +16,12 @@ function Bio() {
         <img src={profileImage} alt="profile-pic" className="profile-image" />
         <div className="text">
           <p>
-            franchine ninh is a full-time coder who finds a creative outlet in
-            film photography. this website showcases her photographic
+            based in the pnw, franchine ninh is a coder who finds a creative
+            outlet in film photography. this website showcases her photographic
             explorations of nature, urban settings, and the intersections
-            between them. she received her bfa in photography and bs in computer
-            science from western washington university.
+            between them. she earned her ba in photography and bs in computer
+            science at western washington university. if you're interested in
+            collaborating or just want to say hi, please feel free to reach out.
           </p>
         </div>
       </div>
