@@ -1,9 +1,5 @@
 .galleryWrap {
   line-height: 0;
-  -webkit-column-count: 3; /* split it into 3 columns */
-  -webkit-column-gap: 25px; /* give it a (25/2)px gap between columns */
-  -moz-column-count: 3;
-  -moz-column-gap: 25px;
   column-count: 3;
   column-gap: 25px;
   margin-left: 25px;
@@ -19,32 +15,30 @@
   width: 100% !important;
   height: auto !important;
   margin-bottom: 25px; /* to match column gap */
+  transition: transform 0.2s ease-in-out; 
 }
 
-.galleryWrap .single img:hover {
-  transform: scale(1.011);
+.galleryWrap .single img:hover,
+.galleryWrap .single:focus img {
+  transform: scale(1.03);
+  outline-color: transparent;
+  outline-offset: 2px;
 }
 
 @media (max-width: 1200px) {
   .galleryWrap {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
     column-count: 3;
   }
 }
 
 @media (max-width: 800px) {
   .galleryWrap {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
 @media (max-width: 400px) {
   .galleryWrap {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
     column-count: 1;
   }
 }
@@ -62,6 +56,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  outline: none; /* remove default focus outline for the modal */
 }
 
 .slideWrap .btnClose,
@@ -72,12 +67,18 @@
   opacity: 0.6;
   color: #fff;
   z-index: 9999;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .btnNext:hover,
 .btnPrev:hover,
-.btnClose:hover {
+.btnClose:hover,
+.btnNext:focus,
+.btnPrev:focus,
+.btnClose:focus {
   opacity: 1;
+  outline-color: transparent;
+  outline-offset: 2px;
 }
 
 .slideWrap .btnClose {
@@ -105,11 +106,36 @@
   justify-content: center;
 }
 
+@media (max-width: 600px) {
+  .fullScreenImage {
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+  }
+
+  .slideWrap .btnClose,
+  .slideWrap .btnPrev,
+  .slideWrap .btnNext {
+      font-size: 1.5em; /* adjust icon size for smaller screens */
+      padding: 10px;
+  }
+
+  .slideWrap .btnClose {
+      top: 20px;
+      right: 20px;
+  }
+
+  .slideWrap .btnPrev {
+      left: 20px;
+  }
+
+  .slideWrap .btnNext {
+      right: 20px;
+  }
+}
+
 .fullScreenImage img {
   max-width: 100%;
   max-height: 100%;
   pointer-events: none;
-  -webkit-user-select: none; /*safari*/
-  -ms-user-select: none; /*IE*/
   user-select: none;
 }

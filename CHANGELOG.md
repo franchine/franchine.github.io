@@ -1,31 +1,47 @@
+## [0.1.5] - 2025-4-23
+
+### Added
+
+- linter
+- bio page, includes a profile picture
+- nav icon to bio page
+
+### Changed
+
+- reorganized App.js to support a home and bio page
+- updated css for various componets for optimization
+
 ## [0.1.4] - 2025-4-21
 
 ### Changed
+
 - updated to black bg and white text
 
 ## [0.1.3] - 2025-4-20
 
 ### Changed
+
 - updated deploy command in package.json
 
 ## [0.1.2] - 2025-4-20
 
 ### Changed
+
 - removed unnecessary file
 - added things to .gitignore
 
 ## [0.1.1] - 2025-4-20
 
 ### Changed
+
 - updated photo names
-- updated  deps
+- updated deps
 - removed test, might be the thing thats stopping proper deploy?
 
 ### Fixed
 
 - main branch with correct files
 - reorganized files
-
 
 ## [0.1.0] - 2023-08-16
 
