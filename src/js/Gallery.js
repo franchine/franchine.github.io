@@ -1,5 +1,5 @@
 import "../css/Gallery.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleChevronLeft,
@@ -17,29 +17,32 @@ export const Gallery = ({ galleryImgs }) => {
     setOpenModal(true);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     setOpenModal(false);
-  };
+  }, []);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setSlideNumber((prev) => (prev === 0 ? galleryImgs.length - 1 : prev - 1));
-  };
+  }, [galleryImgs]);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setSlideNumber((prev) => (prev + 1 === galleryImgs.length ? 0 : prev + 1));
-  };
+  }, [galleryImgs]);
 
-  const handleKeyDown = (e) => {
-    if (!openModal) return; // only handle keydown when modal is open
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (!openModal) return; // only handle keydown when modal is open
 
-    if (e.key === "Escape") {
-      handleCloseModal();
-    } else if (e.key === "ArrowLeft") {
-      prevSlide();
-    } else if (e.key === "ArrowRight") {
-      nextSlide();
-    }
-  };
+      if (e.key === "Escape") {
+        handleCloseModal();
+      } else if (e.key === "ArrowLeft") {
+        prevSlide();
+      } else if (e.key === "ArrowRight") {
+        nextSlide();
+      }
+    },
+    [openModal, handleCloseModal, prevSlide, nextSlide]
+  );
 
   useEffect(() => {
     if (openModal && modalRef.current) {
@@ -52,7 +55,7 @@ export const Gallery = ({ galleryImgs }) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown); // remove listener on unmount
     };
-  }, [openModal, prevSlide, nextSlide]); // re-run if these dependencies change
+  }, [handleKeyDown]);
 
   return (
     <div>
@@ -85,8 +88,8 @@ export const Gallery = ({ galleryImgs }) => {
           />
           <div className="fullScreenImage">
             <img
-              src={galleryImgs[slideNumber].img}
-              alt={`Image ${slideNumber + 1} of the gallery`}
+              src={galleryImgs[slideNumber]?.img}
+              alt={`${slideNumber + 1} of the gallery`}
             />
           </div>
         </div>
@@ -98,12 +101,12 @@ export const Gallery = ({ galleryImgs }) => {
             key={index}
             onClick={() => handleOpenModal(index)}
             tabIndex={0} // make individual images focusable
-            aria-label={`view image ${index + 1} in full size`}
+            aria-label={`view ${index + 1} in full size`}
           >
             {/* <div className="image-overlay">
               <h3 className="image-title">{slide.title}</h3>
             </div> */}
-            <img src={slide.img} alt={`small preview of image ${index + 1}`} />
+            <img src={slide.img} alt={`small preview of ${index + 1}`} />
           </div>
         ))}
       </div>

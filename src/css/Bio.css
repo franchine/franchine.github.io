@@ -25,6 +25,7 @@
 }
 
 .text {
+  color: var(--text-icon-color);
   display: flex;
   flex-direction: column; /* stack h1 and p vertically */
   justify-content: center; /* vertically center h1 and p within the text container */
@@ -45,6 +46,7 @@
 }
 
 .bottomSocial {
+  color: var(--text-icon-color);
   display: flex;
   justify-content: center;
   margin-bottom: var(--spacing-unit);

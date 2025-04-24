@@ -1,6 +1,7 @@
 :root {
   --primary-text-color: rgb(239, 238, 245);
   --secondary-text-color: #555;
+  --text-icon-color: plum;
   --spacing-unit: 1rem; /* using rem for better scalability */
   --icon-size: 1.6rem;
 }
@@ -14,7 +15,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--text-icon-color);
   text-decoration: none;
   font-size: calc(1em + 0.5vw); /* adjust scaling with viewport width */
   font-weight: bold;
@@ -23,11 +24,11 @@ a {
 
 a:hover,
 a:focus { 
-  color: plum; 
+  color: transparent; /* make the text transparent on hover/focus */
 }
 
 .nameTitle {
-  color: inherit;
+  color: var(--text-icon-color);
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(1.5em + 1vw); /* adjust scaling with viewport width */
@@ -63,7 +64,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover/focus */
+  background-color: rgba(255, 255, 255, 0.1); /* subtle background on hover/focus */
 }
 
 .cat-icon {

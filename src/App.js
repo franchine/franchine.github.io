@@ -11,7 +11,7 @@ function App() {
       <nav className="navbar">
         <ul>
           <li>
-            <Link to="/bio" aria-label="Go to Bio page" className="nav-link">
+            <Link to="/bio" aria-label="go to bio page" className="nav-link">
               <FontAwesomeIcon className="cat-icon" icon={faCat} />
             </Link>
           </li>
