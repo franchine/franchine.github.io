@@ -5,7 +5,6 @@ import {
   faCircleChevronRight,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
-
 import "../css/Gallery.css";
 
 export const Gallery = ({ galleryImgs }) => {

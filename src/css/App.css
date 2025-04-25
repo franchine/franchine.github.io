@@ -10,7 +10,6 @@
 }
 
 body {
-  background-color: #121212; /* a dark background for better contrast with text color */
   color: var(--primary-text-color);
   font-family: sans-serif; /* default font family for better rendering */
   margin: 0; 
