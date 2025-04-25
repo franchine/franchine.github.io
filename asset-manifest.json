@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1390c718.css",
-    "main.js": "/static/js/main.565e79ac.js",
+    "main.css": "/static/css/main.69a71b8a.css",
+    "main.js": "/static/js/main.b813d8ca.js",
     "static/js/488.f7b14090.chunk.js": "/static/js/488.f7b14090.chunk.js",
     "static/media/bathroom-tulips.jpg": "/static/media/bathroom-tulips.0b919e14ebf28dfb863a.jpg",
     "static/media/up-forest.jpg": "/static/media/up-forest.beaa080e329ed0e0a3c9.jpg",
@@ -12,6 +12,7 @@
     "static/media/saigon-president-palace.jpg": "/static/media/saigon-president-palace.da0576dbf806fed6371f.jpg",
     "static/media/thevessel.jpg": "/static/media/thevessel.6909f55671e157aba97d.jpg",
     "static/media/honolulu-trees.jpg": "/static/media/honolulu-trees.3215da214c21298a1ef1.jpg",
+    "static/media/profile.jpg": "/static/media/profile.6c59811bc68f1b0eaaec.jpg",
     "static/media/saigon-traffic.JPG": "/static/media/saigon-traffic.c73e7e7707c8f321098d.JPG",
     "static/media/iowa-fatherson.jpg": "/static/media/iowa-fatherson.600a434ed8b5c5476be2.jpg",
     "static/media/hoi-an-lotus.JPG": "/static/media/hoi-an-lotus.1289ad5a01f55477a327.JPG",
@@ -20,12 +21,12 @@
     "static/media/seattle-traffic.JPG": "/static/media/seattle-traffic.d869a672643ddf369cf6.JPG",
     "static/media/golden-stairs.JPG": "/static/media/golden-stairs.d0fa4b5fac6aac021f6c.JPG",
     "index.html": "/index.html",
-    "main.1390c718.css.map": "/static/css/main.1390c718.css.map",
-    "main.565e79ac.js.map": "/static/js/main.565e79ac.js.map",
+    "main.69a71b8a.css.map": "/static/css/main.69a71b8a.css.map",
+    "main.b813d8ca.js.map": "/static/js/main.b813d8ca.js.map",
     "488.f7b14090.chunk.js.map": "/static/js/488.f7b14090.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1390c718.css",
-    "static/js/main.565e79ac.js"
+    "static/css/main.69a71b8a.css",
+    "static/js/main.b813d8ca.js"
   ]
 }
