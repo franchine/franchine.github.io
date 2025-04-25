@@ -1,3 +1,9 @@
+## [0.1.6] - 2025-4-24
+
+### Fixed
+
+- hashtag was showing up in the url. changes were made to fix that bug
+
 ## [0.1.5] - 2025-4-24
 
 ### Added
