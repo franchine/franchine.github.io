@@ -1,4 +1,4 @@
-## [0.1.5] - 2025-4-23
+## [0.1.5] - 2025-4-24
 
 ### Added
 
@@ -9,7 +9,9 @@
 ### Changed
 
 - reorganized App.js to support a home and bio page
-- updated css for various componets for optimization
+- updated css for various components for optimization, alphabetized elements
+- updated logo and favicon
+- text color is plum
 
 ## [0.1.4] - 2025-4-21
 
