@@ -67,9 +67,6 @@ function App() {
             </li>
           </ul>
         </nav>
-        {/* <div className="menu-footer">
-          <p>&copy; 2025 franchine ninh</p>
-        </div> */}
       </aside>
 
       {/* Main Content Area */}
