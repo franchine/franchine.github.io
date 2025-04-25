@@ -21,7 +21,7 @@ function Bio() {
             explorations of nature, urban settings, and the intersections
             between them. she earned her ba in photography and bs in computer
             science at western washington university. if you're interested in
-            collaborating or just want to say hi, please feel free to reach out.
+            collaborating or just want to say hi, please feel free to reach out!
           </p>
         </div>
       </div>
@@ -50,10 +50,7 @@ function Bio() {
             }}
           />
         </div>
-
-        <div className="bottomText">
-          <strong>© 2025 franchine ninh. all rights reserved.</strong>
-        </div>
+        <div className="bottomText">© 2025 franchine ninh</div>
       </div>
     </div>
   );

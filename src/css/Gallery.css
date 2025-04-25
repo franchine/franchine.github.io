@@ -1,21 +1,21 @@
 .galleryWrap {
-  line-height: 0;
   column-count: 3;
   column-gap: 25px;
+  line-height: 0;
   margin-left: 25px;
   margin-right: 25px;
 }
 
 .galleryWrap .single {
-  width: 100%;
   cursor: pointer;
+  width: 100%;
 }
 
 .galleryWrap .single img {
-  width: 100% !important;
   height: auto !important;
   margin-bottom: 25px; /* to match column gap */
-  transition: transform 0.2s ease-in-out; 
+  transition: transform 0.2s ease-in-out;
+  width: 100% !important;
 }
 
 .galleryWrap .single img:hover,
@@ -44,30 +44,30 @@
 }
 
 .slideWrap {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: flex;
   height: 100%;
+  justify-content: center;
+  left: 0;
   outline: none; /* remove default focus outline for the modal */
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .slideWrap .btnClose,
 .slideWrap .btnPrev,
 .slideWrap .btnNext {
-  position: fixed;
+  color: #fff;
   cursor: pointer;
   opacity: 0.6;
-  color: #fff;
-  z-index: 9999;
+  position: fixed;
   transition: opacity 0.2s ease-in-out;
+  z-index: 9999;
 }
 
 .btnNext:hover,
@@ -82,34 +82,34 @@
 }
 
 .slideWrap .btnClose {
-  top: 40px;
   right: 40px;
+  top: 40px;
 }
 
 .slideWrap .btnPrev {
+  left: 40px;
   top: 50%;
   transform: translateY(-50%);
-  left: 40px;
 }
 
 .slideWrap .btnNext {
+  right: 40px;
   top: 50%;
   transform: translateY(-50%);
-  right: 40px;
 }
 
 .fullScreenImage {
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  display: flex;
   align-items: center;
+  display: flex;
+  height: calc(100% - 40px);
   justify-content: center;
+  width: calc(100% - 40px);
 }
 
 @media (max-width: 600px) {
   .fullScreenImage {
-      width: calc(100% - 20px);
-      height: calc(100% - 20px);
+    height: calc(100% - 20px);  
+    width: calc(100% - 20px);
   }
 
   .slideWrap .btnClose,
@@ -120,8 +120,8 @@
   }
 
   .slideWrap .btnClose {
-      top: 20px;
-      right: 20px;
+    right: 20px;  
+    top: 20px;
   }
 
   .slideWrap .btnPrev {
@@ -134,8 +134,8 @@
 }
 
 .fullScreenImage img {
-  max-width: 100%;
   max-height: 100%;
+  max-width: 100%;
   pointer-events: none;
   user-select: none;
 }

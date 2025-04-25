@@ -1,46 +1,15 @@
 
 .bio {
+  align-items: center;   
   display: flex;
   flex-direction: column; /* stack the info and bottomHeader vertically */
-  align-items: center;   
   padding : calc(6 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
 }
 
-.info {
-  display: grid;
-  grid-template-columns: auto 1fr;  /* two columns: auto for image, 1fr for text */
-  align-items: center;              /* vertically align image and text container */
-  width: 100%;                      /* ensure it takes full width of parent */
-  max-width: 800px;                 /* optional: Limit the maximum width */
-  margin-bottom: calc(5 * var(--spacing-unit));   
-  margin-left: auto;  
-  margin-right: auto; 
-}
-
-.profile-image {
-  width: 250px; /* fixed width for the image */
-  height: auto;
-  margin-right: calc(2 * var(--spacing-unit)); /* space between image and text */
-}
-
-.text {
-  color: var(--primary-text-color);
-  display: flex;
-  flex-direction: column; /* stack h1 and p vertically */
-  justify-content: center; /* vertically center h1 and p within the text container */
-  font-size: calc(4px + 2vmin);
-}
-
-.text h1 {
-  margin-top: 0; /* remove default top margin */
-  margin-bottom: 5px; /* add a little space below the h1 */
-  color: var(--primary-text-color);
-}
-
 .bottomHeader {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 
@@ -56,14 +25,47 @@
   margin: 0 var(--spacing-unit);
 }
 
+.bottomText {
+  color: var(--secondary-text-color);
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: var(--spacing-unit);
+  text-align: center;
+}
+
+.info {
+  align-items: center; /* vertically align image and text container */
+  display: grid;
+  grid-template-columns: auto 1fr; /* two columns: auto for image, 1fr for text */
+  margin-bottom: calc(5 * var(--spacing-unit));   
+  margin-left: auto;  
+  margin-right: auto; 
+  max-width: 800px; /* optional: Limit the maximum width */
+  width: 100%; /* ensure it takes full width of parent */
+
+}
+
+.profile-image {
+  height: auto;
+  margin-right: calc(2 * var(--spacing-unit)); /* space between image and text */
+  width: 250px; /* fixed width for the image */
+}
+
 .socialIcon:hover {
   color: rgb(239, 238, 245); 
   transition: color 0.3s ease-in-out; 
 }
 
-.bottomText {
-  font-size: 0.9em;
-  color: var(--secondary-text-color);
-  text-align: center;
-  margin-top: var(--spacing-unit);
+.text {
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column; /* stack h1 and p vertically */
+  font-size: calc(4px + 2vmin);
+  justify-content: center; /* vertically center h1 and p within the text container */
+}
+
+.text h1 {
+  color: var(--primary-text-color);
+  margin-top: 0; /* remove default top margin */
+  margin-bottom: 5px; /* add a little space below the h1 */
 }

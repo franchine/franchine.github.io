@@ -1,4 +1,3 @@
-import "../css/Gallery.css";
 import { useEffect, useState, useRef, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,6 +5,8 @@ import {
   faCircleChevronRight,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
+
+import "../css/Gallery.css";
 
 export const Gallery = ({ galleryImgs }) => {
   const [slideNumber, setSlideNumber] = useState(0);

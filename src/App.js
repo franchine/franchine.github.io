@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import Bio from "./js/Bio";
-import Home from "./js/Home";
-import "./css/App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Bio from "./js/Bio";
+import Home from "./js/Home";
+import "./css/App.css";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

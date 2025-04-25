@@ -97,9 +97,7 @@ function Home() {
       <br />
       <div></div>
       <div className="bottomHeader">
-        <div className="bottomText">
-          <strong>© 2025 franchine ninh. all rights reserved.</strong>
-        </div>
+        <div className="bottomText">© 2025 franchine ninh</div>
       </div>
     </div>
   );
