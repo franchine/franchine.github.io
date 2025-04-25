@@ -1,98 +1,85 @@
-import Gallery from "./js/Gallery";
-import "./css/App.css";
+import React, { useState, useRef, useEffect } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-
-const galleryImgs = [
-  {
-    img: require("./img/gallery/seattle-traffic.JPG"),
-  },
-  {
-    img: require("./img/gallery/foggy-lake.JPG"),
-  },
-  {
-    img: require("./img/gallery/hoi-an-lotus.JPG"),
-  },
-  {
-    img: require("./img/gallery/iowa-fatherson.jpg"),
-  },
-  {
-    img: require("./img/gallery/saigon-traffic.JPG"),
-  },
-  {
-    img: require("./img/gallery/golden-mtrainer.jpg"),
-  },
-  {
-    img: require("./img/gallery/saigon-president-palace.jpg"),
-  },
-  {
-    img: require("./img/gallery/bathroom-tulips.jpg"),
-  },
-  {
-    img: require("./img/gallery/washington-state-ferris-wheel.jpg"),
-  },
-  {
-    img: require("./img/gallery/thevessel.jpg"),
-  },
-  {
-    img: require("./img/gallery/golden-stairs.JPG"),
-  },
-  {
-    img: require("./img/gallery/pnw-beach.jpg"),
-  },
-   {
-    img: require("./img/gallery/night-chicago-lake-mich.jpg"),
-  },
-  {
-    img: require("./img/gallery/honolulu-trees.jpg"),
-  },
-  {
-    img: require("./img/gallery/up-forest.jpg"),
-  },
-  {
-    img: require("./img/gallery/night-hoi-an.JPG"),
-  },
-  // {
-  //   img: require("./img/gallery/"),
-  // },
-];
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Bio from "./js/Bio";
+import Home from "./js/Home";
+import "./css/App.css";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollbarWidth = useRef(0);
+
+  useEffect(() => {
+    const updateScrollbarWidth = () => {
+      scrollbarWidth.current =
+        window.innerWidth - document.documentElement.clientWidth;
+    };
+
+    updateScrollbarWidth();
+    window.addEventListener("resize", updateScrollbarWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateScrollbarWidth);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    }
+  };
+
   return (
-    <>
-      {
-        <div className="App">
-          <br />
-          <br />
-          <div className="nameTitle">
-            <strong>franchine ninh</strong>
-          </div>
-          <br />
-          <br />
-          <Gallery galleryImgs={galleryImgs} />
-          <br />
-          <br />
-          <div></div>
-          <div className="bottomHeader">
-            <FontAwesomeIcon
-              className="bottonSocial"
-              icon={faInstagram}
-              onClick={() => {
-                window.location.href =
-                  "https://www.instagram.com/franchineninh";
-              }}
-            />
-            <br />
-            <br />
-            <div className="bottomText">
-              <strong>© 2025 franchine ninh. all rights reserved.</strong>
-            </div>
-          </div>
-          <br />
-          <br />
-        </div>
-      }
-    </>
+    <div className="app-container">
+      <button
+        className="menu-toggle"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+      >
+        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+      </button>
+
+      <aside className={`menu-panel ${isMenuOpen ? "open" : ""}`}>
+        <nav className="menu-nav">
+          <ul>
+            <li>
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                aria-label="go to home page"
+                className="menu-link"
+              >
+                home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/bio"
+                onClick={() => setIsMenuOpen(false)}
+                aria-label="go to bio page"
+                className="menu-link"
+              >
+                bio
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        {/* <div className="menu-footer">
+          <p>&copy; 2025 franchine ninh</p>
+        </div> */}
+      </aside>
+
+      {/* Main Content Area */}
+      <main className={`site-content ${isMenuOpen ? "menu-open" : ""}`}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bio" element={<Bio />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
