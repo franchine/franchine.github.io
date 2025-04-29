@@ -1,3 +1,13 @@
+## [0.1.7] - 2025-4-28
+
+### Changed
+
+- bio page css formatting when its in mobile view
+
+### Fixed
+
+- 404 error bio page
+
 ## [0.1.6] - 2025-4-24
 
 ### Fixed

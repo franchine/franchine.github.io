@@ -1,9 +1,8 @@
-
 .bio {
-  align-items: center;   
+  align-items: center;
   display: flex;
   flex-direction: column; /* stack the info and bottomHeader vertically */
-  padding : calc(6 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
+  padding: calc(6 * var(--spacing-unit)) calc(2 * var(--spacing-unit));
 }
 
 .bottomHeader {
@@ -36,24 +35,23 @@
 .info {
   align-items: center; /* vertically align image and text container */
   display: grid;
-  grid-template-columns: auto 1fr; /* two columns: auto for image, 1fr for text */
-  margin-bottom: calc(5 * var(--spacing-unit));   
-  margin-left: auto;  
-  margin-right: auto; 
+  grid-template-columns: auto 1fr; /* two columns: auto for image, 1fr for text (default) */
+  margin-bottom: calc(5 * var(--spacing-unit));
+  margin-left: auto;
+  margin-right: auto;
   max-width: 800px; /* optional: Limit the maximum width */
   width: 100%; /* ensure it takes full width of parent */
-
 }
 
 .profile-image {
   height: auto;
-  margin-right: calc(2 * var(--spacing-unit)); /* space between image and text */
-  width: 250px; /* fixed width for the image */
+  margin-right: calc(2 * var(--spacing-unit)); /* space between image and text (default) */
+  width: 250px; /* fixed width for the image (default) */
 }
 
 .socialIcon:hover {
-  color: rgb(239, 238, 245); 
-  transition: color 0.3s ease-in-out; 
+  color: rgb(239, 238, 245);
+  transition: color 0.3s ease-in-out;
 }
 
 .text {
@@ -66,6 +64,25 @@
 
 .text h1 {
   color: var(--primary-text-color);
-  margin-top: 0; /* remove default top margin */
   margin-bottom: 5px; /* add a little space below the h1 */
+  margin-top: 0; /* remove default top margin */
+}
+
+@media (max-width: 525px) {
+  .info {
+    grid-template-columns: 1fr; /* single column for mobile */
+    margin-bottom: calc(2 * var(--spacing-unit));
+    text-align: center; /* center the text below the image */
+  }
+
+  .profile-image {
+    display: block;
+    justify-self: center;
+    margin-bottom: calc(1.5 * var(--spacing-unit)); /* add some space below the image */ 
+    margin-right: 0; /* remove right margin on mobile */
+  }
+
+  p {
+    padding: 0 calc(3 * var(--spacing-unit)) ;
+  }
 }
