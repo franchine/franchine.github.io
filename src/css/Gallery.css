@@ -59,7 +59,6 @@
 .slideWrap .btnClose,
 .slideWrap .btnNext,
 .slideWrap .btnPrev{
-  /* color: #fff; */
   color: plum;
   cursor: pointer;
   opacity: 0.6;

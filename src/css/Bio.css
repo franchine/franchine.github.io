@@ -54,6 +54,33 @@
   transition: color 0.3s ease-in-out;
 }
 
+.profileWrap {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  outline: none; /* remove default focus outline for the modal */
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.profileWrap .btnClose{
+  color: plum;
+  cursor: pointer;
+  opacity: 0.6;
+  position: fixed;
+  right: 40px;
+  transition: opacity 0.2s ease-in-out;
+  top: 40px;
+  z-index: 9999;
+}
+
 .text {
   color: var(--primary-text-color);
   display: flex;
@@ -71,11 +98,12 @@
 @media (max-width: 525px) {
   .info {
     grid-template-columns: 1fr; /* single column for mobile */
-    margin-bottom: calc(2 * var(--spacing-unit));
+    margin-bottom: calc(1 * var(--spacing-unit));
     text-align: center; /* center the text below the image */
   }
 
   .profile-image {
+    cursor: pointer;
     display: block;
     justify-self: center;
     margin-bottom: calc(1.5 * var(--spacing-unit)); /* add some space below the image */ 
@@ -84,5 +112,14 @@
 
   p {
     padding: 0 calc(3 * var(--spacing-unit)) ;
+  }
+}
+
+@media (max-width: 600px) {
+  .profileWrap .btnClose{
+      font-size: 1.5em; /* adjust icon size for smaller screens */
+      padding: 10px;
+      right: 20px;  
+      top: 20px;
   }
 }
