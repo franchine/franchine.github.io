@@ -1,3 +1,13 @@
+## [0.1.8] - 2025-4-28
+
+### Changed
+
+- profile pic can full screen in bio page
+
+### Fixed
+
+- 404 error bio ? q.q
+
 ## [0.1.7] - 2025-4-28
 
 ### Changed
