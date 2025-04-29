@@ -71,25 +71,26 @@ export const Gallery = ({ galleryImgs }) => {
             icon={faCircleXmark}
             className="btnClose"
             onClick={handleCloseModal}
-            aria-label="Close image gallery"
+            aria-label="close image gallery"
           />
 
           <FontAwesomeIcon
             icon={faCircleChevronLeft}
             className="btnPrev"
             onClick={prevSlide}
-            aria-label="Previous image"
+            aria-label="previous image"
           />
           <FontAwesomeIcon
             icon={faCircleChevronRight}
             className="btnNext"
             onClick={nextSlide}
-            aria-label="Next image"
+            aria-label="next image"
           />
           <div className="fullScreenImage">
             <img
               src={galleryImgs[slideNumber]?.img}
-              alt={`${slideNumber + 1} of the gallery`}
+              alt={`${galleryImgs[slideNumber]?.alt}, 
+              ${slideNumber + 1} of the gallery}`}
             />
           </div>
         </div>
@@ -101,9 +102,9 @@ export const Gallery = ({ galleryImgs }) => {
             key={index}
             onClick={() => handleOpenModal(index)}
             tabIndex={0} // make individual images focusable
-            aria-label={`view ${index + 1} in full size`}
+            aria-label={`view ${slide.alt} in full size`}
           >
-            <img src={slide.img} alt={`small preview of ${index + 1}`} />
+            <img src={slide.img} alt={`small preview of ${slide.alt}`} />
           </div>
         ))}
       </div>
