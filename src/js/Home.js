@@ -31,7 +31,7 @@ const galleryImgs = [
   {
     img: require("../img/gallery/golden-mtrainer.jpg"),
     alt: "golden mount rainier",
-    title: "golden mount rainierr",
+    title: "golden mount rainier",
   },
   {
     img: require("../img/gallery/saigon-president-palace.jpg"),

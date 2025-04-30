@@ -1,3 +1,14 @@
+.btnNext:hover,
+.btnPrev:hover,
+.btnClose:hover,
+.btnNext:focus,
+.btnPrev:focus,
+.btnClose:focus {
+  opacity: 1;
+  outline-color: transparent;
+  outline-offset: 2px;
+}
+
 .fullScreenImage {
   align-items: center;
   display: flex;
@@ -23,21 +34,55 @@
 
 .galleryWrap .single {
   cursor: pointer;
+  overflow: hidden; /* clip the overlay within the image bounds */
+  margin-bottom: 25px;
+  position: relative; /* needed for absolute positioning of the overlay */
   width: 100%;
 }
 
 .galleryWrap .single img {
+  display: block; 
   height: auto !important;
-  margin-bottom: 25px; /* to match column gap */
+  margin-bottom: 0;
   transition: transform 0.2s ease-in-out;
   width: 100% !important;
 }
 
-.galleryWrap .single img:hover,
-.galleryWrap .single:focus img {
-  transform: scale(1.03);
+.galleryWrap .single:hover .image-overlay,
+.galleryWrap .single:focus .image-overlay {
+  opacity: 1;
+  transform: translateY(0); /* slide up into view */
+}
+
+.galleryWrap .single:focus img,
+.galleryWrap .single:hover img {
   outline-color: transparent;
   outline-offset: 2px;
+  transform: scale(1.03);
+}
+
+.image-overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  bottom: 0;
+  box-sizing: border-box;
+  color: plum;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  opacity: 0; 
+  padding: 10px;
+  position: absolute; /* position overlay absolutely within the image */
+  text-align: center;
+  transform: translateY(100%); /* start from below the image */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.image-title {
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 .slideWrap {
@@ -59,24 +104,12 @@
 .slideWrap .btnClose,
 .slideWrap .btnNext,
 .slideWrap .btnPrev{
-  /* color: #fff; */
   color: plum;
   cursor: pointer;
   opacity: 0.6;
   position: fixed;
   transition: opacity 0.2s ease-in-out;
   z-index: 9999;
-}
-
-.btnNext:hover,
-.btnPrev:hover,
-.btnClose:hover,
-.btnNext:focus,
-.btnPrev:focus,
-.btnClose:focus {
-  opacity: 1;
-  outline-color: transparent;
-  outline-offset: 2px;
 }
 
 .slideWrap .btnClose {
@@ -112,6 +145,10 @@
   .fullScreenImage {
     height: calc(100% - 20px);  
     width: calc(100% - 20px);
+  }
+
+  .image-title {
+    font-size: 0.7em;
   }
 
   .slideWrap .btnClose,

@@ -1,3 +1,19 @@
+## [0.1.8] - 2025-4-29
+
+### Added
+
+- image overlay with the title when a user hovers over an image
+
+### Changed
+
+- profile pic can full screen in bio page
+
+### Fixed
+
+- 404 error bio ? q.q
+- small bug from handleKeyDown in bio
+- typo on golden mount rainier img
+
 ## [0.1.7] - 2025-4-28
 
 ### Changed
