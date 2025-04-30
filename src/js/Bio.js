@@ -30,7 +30,7 @@ function Bio() {
         handleCloseProfile();
       }
     },
-    [isProfileOpen, handleOpenProfile, handleCloseProfile]
+    [isProfileOpen, handleCloseProfile]
   );
 
   useEffect(() => {

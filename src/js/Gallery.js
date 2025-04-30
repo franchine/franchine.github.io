@@ -105,6 +105,9 @@ export const Gallery = ({ galleryImgs }) => {
             aria-label={`view ${slide.alt} in full size`}
           >
             <img src={slide.img} alt={`small preview of ${slide.alt}`} />
+            <div className="image-overlay">
+              <div className="image-title">{slide.title}</div>
+            </div>
           </div>
         ))}
       </div>
