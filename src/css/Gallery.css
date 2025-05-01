@@ -69,6 +69,7 @@
   color: plum;
   display: flex;
   flex-direction: column;
+  height: 60px;
   justify-content: center;
   left: 0;
   opacity: 0; 
@@ -175,5 +176,9 @@
 @media (max-width: 400px) {
   .galleryWrap {
     column-count: 1;
+  }
+
+  .image-title {
+    font-size: 0.5em;
   }
 }

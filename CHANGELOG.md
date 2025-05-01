@@ -1,3 +1,9 @@
+## [0.1.9] - 2025-5-01
+
+### Changed
+
+- updated image overlay to be bigger, decreased image title text when the view is 400px
+
 ## [0.1.8] - 2025-4-29
 
 ### Added
