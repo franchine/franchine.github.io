@@ -1,3 +1,9 @@
+## [0.1.10] - 2025-5-01
+
+### Changed
+
+- consolidate the mobile view
+
 ## [0.1.9] - 2025-5-01
 
 ### Changed

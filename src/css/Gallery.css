@@ -148,6 +148,10 @@
     width: calc(100% - 20px);
   }
 
+  .galleryWrap {
+    column-count: 1;
+  }
+
   .image-title {
     font-size: 0.7em;
   }
@@ -170,15 +174,5 @@
 
   .slideWrap .btnPrev {
       left: 20px;
-  }
-}
-
-@media (max-width: 400px) {
-  .galleryWrap {
-    column-count: 1;
-  }
-
-  .image-title {
-    font-size: 0.5em;
   }
 }
