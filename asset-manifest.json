@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8abdbb55.css",
+    "main.css": "/static/css/main.03a1e245.css",
     "main.js": "/static/js/main.96265e38.js",
     "static/js/488.f7b14090.chunk.js": "/static/js/488.f7b14090.chunk.js",
     "static/media/bathroom-tulips.jpg": "/static/media/bathroom-tulips.0b919e14ebf28dfb863a.jpg",
@@ -21,12 +21,12 @@
     "static/media/seattle-traffic.JPG": "/static/media/seattle-traffic.d869a672643ddf369cf6.JPG",
     "static/media/golden-stairs.JPG": "/static/media/golden-stairs.d0fa4b5fac6aac021f6c.JPG",
     "index.html": "/index.html",
-    "main.8abdbb55.css.map": "/static/css/main.8abdbb55.css.map",
+    "main.03a1e245.css.map": "/static/css/main.03a1e245.css.map",
     "main.96265e38.js.map": "/static/js/main.96265e38.js.map",
     "488.f7b14090.chunk.js.map": "/static/js/488.f7b14090.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8abdbb55.css",
+    "static/css/main.03a1e245.css",
     "static/js/main.96265e38.js"
   ]
 }
